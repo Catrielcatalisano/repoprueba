@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logística Milo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
 </head>
 <body>
-    <h1>logistica milo</h1>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="imagenes/logo2.jpeg" alt="Logística Milo">
+            </div>
+            <ul id="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Solicitudes de Unidades</h2>
+        <form>
+            
+            <fieldset>
+                
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Solicitud de Unidad</legend>
+                <label for="unidad">Tipo de Unidad:</label>
+                <select id="unidad" name="unidad" required>
+                    <option value="unidad1">Chasis</option>
+                    <option value="unidad2">Semi</option>
+                    <option value="unidad3">Cisterna</option>
+                </select><br><br>
+            </fieldset>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+    <section>
+        <h2>Solicitud de Retiros</h2>
+        <form>
+            <fieldset>
+                <legend>Datos de Retiro</legend>
+                <label for="numContenedor">Número de Contenedor:</label>
+                <input type="text" id="numContenedor" name="numContenedor" required><br><br>
+                <label for="cliente">Cliente:</label>
+                <input type="text" id="cliente" name="cliente" required><br><br>
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" name="origen" required><br><br>
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required><br><br>
+                <label for="fechaRetiro">Fecha de Retiro:</label>
+                <input type="date" id="fechaRetiro" name="fechaRetiro" required><br><br>
+                <label for="emailContacto">Email de Contacto:</label>
+                <input type="email" id="emailContacto" name="emailContacto" required><br><br>
+            </fieldset>
+            <button type="submit">Enviar Solicitud de Retiro</button>
+        </form>
+    </section>
+    <section class="image-gallery">
+        <h2>Galería de Imágenes</h2>
+        <div class="image-container">
+            <img src="imagenes/galeria1.jpeg" alt="Imagen 1">
+            <img src="imagenes/galeria2.jpeg" alt="Imagen 2">
+            <img src="imagenes/galeria3.jpeg" alt="Imagen 3">
+       
+        </div>
+        <button id="prevButton">Anterior</button>
+        <button id="nextButton">Siguiente</button>
+    </section>
+    <footer>
+        <div class="container">
+            <h3>¡Contactanos!</h3>
+            <p>Ponemos el mundo a tu alcance</p>
+            <form id="contact-form" action="enviar_correo.php" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Correo</button>
+            </form>
+        </div>
+    </footer>
+    
+    <script src="code.js"></script>
 </body>
 </html>
-
-
