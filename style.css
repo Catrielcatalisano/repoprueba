@@ -129,7 +129,6 @@ section {
 .image-gallery h2 {
     color: #333;
     font-size: 24px;
-    flex-direction: column;
 }
 
 .image-container {
@@ -184,6 +183,7 @@ ul#menu li a:hover {
 }
 .image-gallery {
     background-image: url(imagenes/camionero.jpg);
+    
 }
 
 .image-container {
