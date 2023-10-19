@@ -12,7 +12,18 @@ header {
     text-align: center;
     padding: 10px 0;
 }
+.navbar {
+background-image: url(imagenes/banner.webp);
+height: 100px;
+padding: 5%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
 
+}
+h2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -178,7 +189,7 @@ ul#menu li a:hover {
 }
 
 .image-gallery h2 {
-    color: #333;
+    color: #ece1e1;
     font-size: 24px;
 }
 .image-gallery {

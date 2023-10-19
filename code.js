@@ -20,18 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Evento para el botón Siguiente
+    //  para el boton Siguiente
     nextButton.addEventListener("click", function () {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         showImage();
     });
 
-    // Evento para el botón Anterior
+    // Evento para el boton Anterior
     prevButton.addEventListener("click", function () {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
         showImage();
     });
 
-    // Mostrar la primera imagen al cargar la página
+    // Mostrar la primera imagen al cargar la pagina
     showImage();
 });
