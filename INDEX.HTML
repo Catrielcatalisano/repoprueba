@@ -51,27 +51,32 @@
     <section>
         <h2>Solicitudes de Unidades</h2>
         <form>
-            
             <fieldset>
-                
-                <legend>Datos Personales</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required><br><br>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required><br><br>
-            </fieldset>
-            <fieldset>
-                <legend>Solicitud de Unidad</legend>
-                <label for="unidad">Tipo de Unidad:</label>
-                <select id="unidad" name="unidad" required>
-                    <option value="unidad1">Chasis</option>
-                    <option value="unidad2">Semi</option>
-                    <option value="unidad3">Cisterna</option>
-                </select><br><br>
-            </fieldset>
-            <button type="submit">Enviar Solicitud</button>
+              <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="unidad">Unidad:</label>
+                        <select class="form-control" id="unidad">
+                            <option value="unidad1">Unidad 1</option>
+                            <option value="unidad2">Unidad 2</option>
+                            <option value="unidad3">Unidad 3</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </form>
     </section>
     <section>
@@ -101,7 +106,6 @@
             <img src="imagenes/galeria1.jpeg" alt="Imagen 1">
             <img src="imagenes/galeria2.jpeg" alt="Imagen 2">
             <img src="imagenes/galeria3.jpeg" alt="Imagen 3">
-       
         </div>
         <button id="prevButton">Anterior</button>
         <button id="nextButton">Siguiente</button>
@@ -124,8 +128,6 @@
             </form>
         </div>
     </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
 </body>
 </html>

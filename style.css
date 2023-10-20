@@ -14,7 +14,7 @@ header {
 }
 .navbar {
 background-image: url(imagenes/banner.webp);
-height: 100px;
+height: 50px;
 padding: 5%;
 font-family: Arial, Helvetica, sans-serif;
 font-size: large;
@@ -34,18 +34,6 @@ nav {
 
 nav img {
     max-width: 100px;
-}
-
-ul#menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-   
-}
-
-ul#menu li {
-    display: inline;
-    margin: 0 20px;
 }
 
 /* Estilos de los formularios */
@@ -211,6 +199,22 @@ ul#menu li a:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+/*adaptacion a pantalla chica*/
+
+@media (max-width: 600px) {
+    .form-group {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        margin-bottom: 5px;
+    }
+    .form-control {
+        width:10%;
+    }
+}
+
+
 
 /* Estilos para el formulario */
 form {
@@ -252,7 +256,7 @@ select {
 }
 
 button {
-    background-color: #333; /* Cambia */
+    background-color: #de2b2b; /* Cambia */
     color: #fff;
     padding: 10px 20px;
     border: none;
