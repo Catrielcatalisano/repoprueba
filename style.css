@@ -247,3 +247,9 @@ button:hover {
 .container {
     color: #ccc;
 }
+@media (max-width: 768px) {
+    textarea {
+        width: 100%;
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+    }
+}
