@@ -16,15 +16,14 @@ header {
     font-size: 30px;
     font-style: oblique;
   }
-  
   nav {
     display: flex;
     justify-content: space-around;
-    background-color: #fbde03e2;
+    background-color: #7a754ce2;
     padding: 10px;
     max-height: 100vh;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    overflow:visible;
+    transition: max-height 0.7s ease-in-out;
   }
   
   nav a {
@@ -33,9 +32,9 @@ header {
     padding: 10px;
     transition: background-color 0.3s;
   }
-  
+ 
   nav a:hover {
-    background-color: #555;
+    background-color: #d42f2f;
   }
   
   /* Estilos para pantallas pequeñas (menú hamburguesa) */
@@ -77,6 +76,18 @@ header {
     opacity: 1;
     filter: contrast(120%);
 }
+#propuesta {
+    flex: 1;
+    padding: 20px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+#propuesta h1{
+  font-family: cursive;
+  font-family: fantasy;
+  text-align: center;
+}
+
 #formulario  {
     flex: 1;
     padding: 20px;
@@ -185,10 +196,28 @@ main {
     width: 100%;
 }
 
+/* Estilo para la sección */
+#propuesta {
+  display: flex; /* Utilizamos flexbox para la disposición de los elementos */
+  align-items: center; /* Alineamos verticalmente los elementos */
+}
 
+/* Estilo para el encabezado h1 */
+#propuesta h1 {
+  margin: 0; /* Eliminamos el margen predeterminado del h1 */
+font-size: 40px;
+}
 
+/* Estilo para el h5 */
+#propuesta h5 {
+  margin-top: 0.5em; /* Agregamos un pequeño margen superior al h5 */
+  font-size: 20px;
+}
 
-
-
+/* Estilo para la imagen */
+#propuesta img {
+  max-width: 100%; /* Aseguramos que la imagen no exceda el ancho del contenedor */
+  margin-left: left; /* Movemos la imagen al lado derecho */
+}
 
 
