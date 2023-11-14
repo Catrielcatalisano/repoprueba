@@ -8,6 +8,7 @@ body {
     min-height: 100vh; 
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTQ0TzEIC_Dn6Ue29k33ygCYLiWVaKvSgsA&usqp=CAU)
 }
+/*estilos para el header*/
 header {
     padding: 15px;
     color: white;
@@ -16,6 +17,7 @@ header {
     font-size: 30px;
     font-style: oblique;
   }
+  /*estilos para el nav*/
   nav {
     display: flex;
     justify-content: space-around;
@@ -25,14 +27,15 @@ header {
     overflow:visible;
     transition: max-height 0.7s ease-in-out;
   }
-  
+  /* estilos para los atributos del nav*/
   nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
+    margin-top: 5px;
   }
- 
+ /* color para animacion en cada atributo, cambia de color*/
   nav a:hover {
     background-color: #d42f2f;
   }
@@ -43,21 +46,8 @@ header {
       flex-direction: column;
       align-items: center;
     }
-  
-    nav a {
-      margin-top: 5px;
-    }
-  
-    .menu-icon {
-      display: block;
-      text-align: right;
-      cursor: pointer;
-      font-size: 20px;
-      margin-right: 15px;
-      margin-top: 10px;
-      display: none;
-    }
   }
+  /* estilos para la seccion de galeria de imagenes*/
 #galeria {
     display: flex;
     width: 100%;
@@ -76,18 +66,13 @@ header {
     opacity: 1;
     filter: contrast(120%);
 }
-#propuesta {
-    flex: 1;
-    padding: 20px;
-    background-color: aliceblue;
-    padding: 20px;
-}
+
 #propuesta h1{
   font-family: cursive;
   font-family: fantasy;
   text-align: center;
 }
-
+/* estilos para formularios*/
 #formulario  {
     flex: 1;
     padding: 20px;
@@ -103,6 +88,7 @@ header {
 #formulario label, #formulario input, #formulario button {
     width: 100%;
 }
+/* estilos para el pie de pagina*/
 footer {
     background-color: #333;
     color: #fff;
@@ -114,12 +100,14 @@ footer img {
     width: 60px;
     float:initial;
     }
+    /*estilos para el main*/
 main {
     display: grid;
     padding: 10px;
     gap: 20px;
     place-content: CENTER;
 }
+/* estilos para la seccion sobre nosotros*/
 #sobre-nosotros {
     max-width: 800px;
     margin: 50px auto;
@@ -196,28 +184,36 @@ main {
     width: 100%;
 }
 
+/* estilos para la seccion propuesta del menu trabaja con nosotros*/
+#propuesta {
+    flex: 1;
+    padding: 20px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
 /* Estilo para la sección */
 #propuesta {
-  display: flex; /* Utilizamos flexbox para la disposición de los elementos */
-  align-items: center; /* Alineamos verticalmente los elementos */
+  display: flex; /*  flexbox para la disposición de los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
 }
 
 /* Estilo para el encabezado h1 */
 #propuesta h1 {
-  margin: 0; /* Eliminamos el margen predeterminado del h1 */
+  margin: 0; /* Elimina el margen predeterminado del h1 */
 font-size: 40px;
 }
 
 /* Estilo para el h5 */
 #propuesta h5 {
-  margin-top: 0.5em; /* Agregamos un pequeño margen superior al h5 */
+  margin-top: 0.5em; /* Agrega un pequeño margen superior al h5 */
   font-size: 20px;
 }
 
 /* Estilo para la imagen */
 #propuesta img {
-  max-width: 100%; /* Aseguramos que la imagen no exceda el ancho del contenedor */
-  margin-left: left; /* Movemos la imagen al lado derecho */
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  margin-left: left; /* Mueve la imagen al lado derecho */
 }
 
 
